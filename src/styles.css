@@ -18,6 +18,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     display: none !important;
 }
 
+.mat-progress-spinner circle, .mat-spinner circle{
+    stroke: #ED1D24 !important;
+}
+
+
 
 @media (max-width: 480px) {
     mat-sidenav{
