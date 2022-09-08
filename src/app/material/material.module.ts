@@ -9,6 +9,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input'
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatSelectModule} from '@angular/material/select';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatListModule} from '@angular/material/list';
 @NgModule({
@@ -16,6 +17,7 @@ import {MatListModule} from '@angular/material/list';
     MatAutocompleteModule,
     MatProgressSpinnerModule,
     MatSidenavModule,
+    MatSelectModule,
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
