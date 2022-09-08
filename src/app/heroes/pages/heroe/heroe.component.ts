@@ -8,9 +8,16 @@ import { HeroesService } from '../../services/heroes.service';
   selector: 'app-heroe',
   templateUrl: './heroe.component.html',
   styles: [`
-     img{width:50%;}
-    .container{margin: 10px}
-    .heroe-img{text-align: center}
+     img{
+      width:55%;
+      border-radius:5px;
+    }
+    .container{
+      margin: 10px;
+    }
+    .heroe-img{
+      text-align: center;
+    }
 
     @media (max-width:600px){
       img{width:100%;}

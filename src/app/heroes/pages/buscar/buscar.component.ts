@@ -27,17 +27,20 @@ export class BuscarComponent implements OnInit {
     this.heresServices.getSugerencias( this.termino.trim() ).subscribe( heroes => this.heroes = heroes);
   }
 
-  opcionSeleccionada(e:MatAutocompleteSelectedEvent){
+  opcionSeleccionada( e:any){
 
     if(!e.option.value){
       this.heroeSeleccionado = undefined!;
       return
-    };
-    const heroe: Heroe = e.option.value;
+    }
+
+    const heroe = e.option.value;
     this.termino = heroe.superhero;
 
-    this.heresServices.getHereoePorId( heroe.id! )
-      .subscribe(heroe => this.heroeSeleccionado = heroe ); 
+    this.heresServices.getHereoePorId( heroe.id ).subscribe( heroe => this.heroeSeleccionado = heroe);
+
+
+
   }
 
 
