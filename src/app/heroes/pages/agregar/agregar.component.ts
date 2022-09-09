@@ -115,7 +115,8 @@ export class AgregarComponent implements OnInit {
 
   mostrarSnakbar( mensaje:string):void {
    this.snackBar.open( mensaje, 'Ok!', {
-    duration:2500
+    duration:2500,
+    verticalPosition:'top'
    } ) 
   }
  
